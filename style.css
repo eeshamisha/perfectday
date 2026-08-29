@@ -44,3 +44,8 @@ button:hover{
 .rainy label {
     margin:15px;
 }
+
+.sunny img {
+    height:100px;
+    width:auto;
+}
