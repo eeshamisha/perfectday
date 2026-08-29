@@ -1,4 +1,4 @@
-const scores = {
+const scores = JSON.parse(localStorage.getItem('scores')) || {
   rainy: 0,
   cold: 0,
   sunny: 0,
@@ -12,6 +12,7 @@ function saveScore() {
   const input = document.querySelector('input:checked');
   const choice = input.value; 
   scores[choice] += 1;
+  localStorage.getItem('scores',scores);
   console.log(scores);
 }
 
