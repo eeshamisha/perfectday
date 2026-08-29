@@ -1,3 +1,7 @@
+background {
+    color:honeydew
+}
+
 #sunny {
     color:red;
 }
@@ -9,6 +13,17 @@
 #cold{
     color:lightblue;
 }
+
+
+
+
+
+
+
+
+
+
+
 img {
 
     width:100px;
