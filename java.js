@@ -16,15 +16,12 @@ function saveScore() {
 }
 
 const results = document.getElementById('resultspage');
-const here = document.getElementById('here');
 const rBtn = document.getElementById("resultsBtn");
 rBtn.addEventListener("click",function(){
-  
-})
-if (results){
+  const here = document.getElementById('here');
   const highestPlayer = scores.reduce((max, item) => item > max.item ? item : max);
   console.log(highestPlayer);
   here.innerHTML+=`
   ${highestPlayer}
   `;
-}
+})
