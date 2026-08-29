@@ -16,8 +16,9 @@ nextButton.addEventListener('click', function() {
 })
 
 const results = document.getElementById('resultspage');
+const result = document.getElementById('here');
 if (results){
   const highestPlayer = scores.reduce((max, item) => item > max.item ? item : max);
   console.log(highestPlayer);
-   
+  
 }
