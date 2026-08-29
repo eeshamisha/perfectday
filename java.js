@@ -8,15 +8,16 @@ const buttons = document.querySelectorAll('.btn');
 const nextButton = document.getElementById('nextButton');
 const backButton = document.getElementById('backButton');
 
-nextButton.addEventListener('click', function() {
+function saveScore() {
   const input = document.querySelector('input:checked');
   const choice = input.value; 
   scores[choice] += 1;
   console.log(scores);
-})
+}
 
 const results = document.getElementById('resultspage');
 const here = document.getElementById('here');
+const rBtn = document.getElementById("resultsBtn");
 if (results){
   const highestPlayer = scores.reduce((max, item) => item > max.item ? item : max);
   console.log(highestPlayer);
