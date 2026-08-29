@@ -14,7 +14,19 @@ img {
     display:inline-block;
 }
 
-p{
+label{
     display:inline-block;
-    margin:auto;
+    margin:15px 10px 5px;
+    font-size:20px;
+}
+
+button {
+    margin:5px;
+    font-size:15px;
+}
+
+button:hover{
+    font-size:20px;
+    margin:2px;
+    color:green;
 }
