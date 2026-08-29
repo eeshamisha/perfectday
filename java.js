@@ -6,9 +6,12 @@ if (page1){
 radioButtons.forEach(radio => {
   radio.addEventListener('change', (event) => {
     const selectedValue = event.target.value;})
-    let UserAnswers = localStorage.getItem('Answers', selectedValue);
-  })
-  console.log(UserAnswers);
+    //let UserAnswers = localStorage.getItem('Answers', selectedValue);
+  localStorage.setItem("answers", JSON.stringify(selectedValue));
+  let result = JSON.parse(localStorage.getItem("answers")) || [];
+})
+
+  console.log(result);
 
 
 
