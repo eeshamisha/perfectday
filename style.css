@@ -40,6 +40,7 @@ button:hover{
     border-style: dashed;
     border-color:cornflowerblue;
     padding: 10px;
+    margin: 10px;
 }
 
 .rainy img {
@@ -54,4 +55,19 @@ button:hover{
 .sunny img {
     height:100px;
     width:auto;
+}
+
+.cold {
+    border-style: dotted;
+    border-color:rgb(177, 217, 225);
+    padding:10px;
+    margin: 10px;
+}
+
+.sunny {
+    border-style:groove;
+    border-color:rgb(255, 209, 70);
+    padding:10px;
+    margin: 10px;
+
 }
