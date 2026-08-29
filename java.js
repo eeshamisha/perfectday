@@ -1,22 +1,18 @@
-const scores = JSON.parse(localStorage.getItem('quizscore')) || {
+const scores = {
   rainy: 0,
   cold: 0,
   sunny: 0,
 };
 
 const buttons = document.querySelectorAll('.btn');
-const reset = document.getElementById('resetButton');
+const nextButton = document.getElementById('nextButton');
+const backButton = document.getElementById('backButton');
 
-function saveScore() {
+nextButton.addEventListener('click', function() {
   const input = document.querySelector('input:checked');
   const choice = input.value; 
   scores[choice] += 1;
-  localStorage.setItem('quizscore', JSON.stringify(scores));
   console.log(scores);
-}
-
-reset.addEventListener('click', () => {
-  localStorage.clear();
 })
 
 const results = document.getElementById('resultspage');
