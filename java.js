@@ -17,7 +17,7 @@ function saveScore() {
 
 reset.addEventListener('click', () => {
   localStorage.clear();
-}
+})
 
 const results = document.getElementById('resultspage');
 if (results){
