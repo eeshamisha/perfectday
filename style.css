@@ -52,6 +52,17 @@ button:hover{
     width:auto;
 }
 
+.sunny img:hover {
+    height:250px;
+    width:auto;
+}
+
+
+.cold img:hover {
+    height:250px;
+    width:auto;
+}
+
 .rainy label {
     margin:15px;
 }
