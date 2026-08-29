@@ -36,6 +36,12 @@ button:hover{
     color:green;
 }
 
+.rainy {
+    border-style: dashed;
+    border-color:cornflowerblue;
+    padding: 10px;
+}
+
 .rainy img {
     height:200px;
     width:auto;
