@@ -6,7 +6,7 @@ if (page1){
 radioButtons.forEach(radio => {
   radio.addEventListener('change', (event) => {
     const selectedValue = event.target.value;})
-    let UserScore = localStorage.getItem('Score');
+    let UserScore = localStorage.getItem('Score', selectedValue);
   })
   console.log(UserScore);
 
