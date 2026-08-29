@@ -21,6 +21,7 @@ reset.addEventListener('click', () => {
 
 const results = document.getElementById('resultspage');
 if (results){
-  console.log(scores);
-  console.log(Math.max(...scores));
+  const highestPlayer = scores.reduce((max, item) => item > max.item ? item : max);
+  console.log(highestPlayer);
+   
 }
