@@ -18,7 +18,8 @@ body {
 }
 
 img {
-    width:100px;
+    margin-left: 20px;
+    width:120px;
     display:inline-block;
 }
 
@@ -95,4 +96,7 @@ h3 {
 }
 span {
     color:pink;
+}
+.begin{
+    margin-left:185px;
 }
